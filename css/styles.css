@@ -345,7 +345,7 @@ section h2{
         width: 100%;
     }
     .headline-container{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     .story .headline{
@@ -390,7 +390,7 @@ section h2{
         margin: 2em 0;
     }
     .photo{
-        width: 36px;
+        width: 33px;
         height: 40px;
         margin-top: -5px;
     }
