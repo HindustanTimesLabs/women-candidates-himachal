@@ -342,6 +342,15 @@ section h2{
     vertical-align: middle;
 }
 
+.legend-block .legend-swatch-small{
+    height: 20px;
+    width: 25px;
+    float: left;
+    margin: 0 0.5em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .legend-block .legend-text{
     display: inline-block;
     vertical-align: middle;
