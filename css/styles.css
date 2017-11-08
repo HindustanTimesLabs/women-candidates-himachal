@@ -25,12 +25,45 @@ img.chart{
     display: table;
 }
 
+.chart-container{
+    max-width: 850px;
+    width: 95%;
+    font-family: "Open Sans", sans-serif;
+    margin: 0.1em auto;
+}
+
+.chart-container .chart-title{
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.chart-container .chart-source{
+    color: #aaa;
+    font-weight: bold;
+    margin: 0.2em 0 1.8em 0;
+}
+
+.chart-container .chart-subhed{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1em;
+    margin: 0.2em 0;
+}
+
 .photo-container{
     text-align: center;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3em;
+}
+
+.lede-photo-grid{
+    width: 100%;
+}
+
+.lede-photo-grid.lede-tab, .lede-photo-grid.lede-mobile-big, .lede-photo-grid.lede-mobile-small{
+    display: none;
 }
 
 .photo-container img{
@@ -314,6 +347,20 @@ section h2{
     vertical-align: middle;
 }
 
+.axis .domain {
+  display: none;
+}
+
+@media(max-width: 1000px){
+    .lede-photo-grid.lede-desktop, .lede-photo-grid.lede-mobile-big, .lede-photo-grid.lede-mobile-small{
+        display: none;
+    }
+
+    .lede-photo-grid.lede-tab{
+        display: block;
+    }
+}
+
 @media (max-width:800px){
     .social-shares {text-align: center; font-size: 1em;}.social-shares .social.whatsapp{background-color:#43d854;display:inline-block}.social-shares .social{width:auto;padding:.2em .8em}.social-shares .social i{margin-right:0}.social-shares .social span{display:none}.social-shares .social{margin:0 0;border-radius:0px;width: 33%; text-align: center;border-width: 4px!important}}
 
@@ -409,3 +456,34 @@ section h2{
     }
 }
 
+@media(max-width: 650px){
+    .lede-photo-grid.lede-mobile-big{
+        display: block;
+    }
+
+    .lede-photo-grid.lede-tab, .lede-photo-grid.lede-desktop, .lede-photo-grid.lede-mobile-small{
+        display: none;
+    }
+
+    .chart-container .chart-title{
+        font-size: 1.2em;
+    }
+
+    .chart-container .chart-subhed{
+        font-size: 0.9em;
+        margin: 0.8em 0;
+    }
+
+    .chart-container .chart-source{
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 400px){
+    .lede-photo-grid.lede-mobile-big{
+        display: none;
+    }
+    .lede-photo-grid.lede-mobile-small{
+        display: block;
+    }
+}
